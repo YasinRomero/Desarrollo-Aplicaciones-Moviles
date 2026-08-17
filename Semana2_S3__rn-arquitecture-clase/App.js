@@ -1,8 +1,9 @@
 import { StyleSheet, View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import ProfileCard from "./src/components/ProfileCard";
+import ProfileCardURL from "./src/components/ProfileCardURL";
 import GridDemo from "./src/screens/GridDemo";
 import StyleDemo from "./src/screens/StyleDemo";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   return (
@@ -10,6 +11,11 @@ export default function App() {
       <SafeAreaProvider style={styles.safe}>
         <View style={styles.container}>
           <ProfileCard />
+          <ProfileCardURL
+            image="https://http.cat/images/102.jpg"
+            name="Gatito HTTP Status 102 "
+            description="Un gatito que nos dice el codigo de error http"
+          />
         </View>
       </SafeAreaProvider>
       <GridDemo />
