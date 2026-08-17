@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from "react-native";
+import ProfileCard from "./src/components/ProfileCard";
+import GridDemo from "./src/screens/GridDemo";
+import StyleDemo from "./src/screens/StyleDemo";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <SafeAreaProvider style={styles.safe}>
+        <View style={styles.container}>
+          <ProfileCard />
+        </View>
+      </SafeAreaProvider>
+      <GridDemo />
+      <StyleDemo />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
+  safe: { flex: 1, backgroundColor: "#F1F5F9" },
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    padding: 16,
   },
 });
