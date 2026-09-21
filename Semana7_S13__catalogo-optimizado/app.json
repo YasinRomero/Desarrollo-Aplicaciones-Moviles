@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Semana7_S13__catalogo-optimizado",
+    "slug": "semana7-s13-catalogo-optimizado",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}
