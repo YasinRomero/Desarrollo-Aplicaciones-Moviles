@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Semana13_S25__permission-control",
+    "slug": "semana13-s25-permission-control",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "Permission Control"
+    },
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Esta aplicación necesita acceso a la cámara para demostrar la gestión de permisos.",
+          "microphonePermission": "Esta aplicación necesita acceso al micrófono para demostrar la gestión de permisos.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Esta aplicación necesita acceso a tu ubicación mientras está en uso para demostrar la gestión de permisos."
+        }
+      ]
+    ]
+  }
+}
